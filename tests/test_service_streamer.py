@@ -129,3 +129,8 @@ class TestClass:
 
         batch_predict2 = streamer_2.predict(self.input_batch2 * BATCH_SIZE)
         assert batch_predict2 == self.batch_output2
+
+
+if __name__ == "__main__":
+    tester = TestClass()
+    tester.test_managed_model()
