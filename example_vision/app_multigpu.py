@@ -39,5 +39,5 @@ def stream_predict():
 
 if __name__ == "__main__":
 
-    streamer = Streamer(ManagedImgModel, batch_size=64, max_latency=0.1, worker_num=4, cuda_devices=(0, 1))  # 0, 1, 2, 3
+    streamer = Streamer(ManagedImgModel, batch_size=64, max_latency=0.1, worker_num=2, cuda_devices=(0, 1))  # 0, 1, 2, 3
     app.run(host="0.0.0.0", port=5005)
